@@ -73,7 +73,7 @@ class WeatherScraper(HTMLParser):
     
     # Example of using the scraper
 if __name__ == "__main__":
-    start_url = "http://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=27174&timeframe=2&StartYear=1840&EndYear=2018&Day=1"
+    start_url = "http://climate.weather.gc.ca/climate_data/daily_data_e.html?StationID=27174&timeframe=2&StartYear=1840&EndYear=2024&Day=1"
     scraper = WeatherScraper(start_url)
     weather_data = scraper.scrape_weather_data()
     print(weather_data)
